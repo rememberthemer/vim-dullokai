@@ -1,21 +1,16 @@
-" Vim color file
+" Dullokai colorscheme
 "
-" Name: dullokia
-" Author: Adrian Benson <rmemeberthemer@gmail.com>
+" Name: dullokai
 " Version: 0.1
+" Maintainer: Adrian Benson <rmemeberthemer@gmail.com>
 " URL: https://github.com/rememberthemer/vim-dullokai
-"
-" Note: Based on the molokai theme by
-" Tomas Restrepo (script_id=2340) which in turn
-" based on the monokai theme for textmate
-" by Wimer Hazenberg and its darker variant
-" by Hamish Stuart Macpherson
-"
+" Description: It's Molokai but duller
+" License:
 
 
 
-highlight clear
 set background=dark
+highlight clear
 
 if exists("syntax_on")
         syntax reset
@@ -25,7 +20,7 @@ let g:colors_name="dullokai"
 
 
 " {{{ CODE COLORS ======================
-hi Normal       guifg=#c6c6c6 guibg=#444440 gui=NONE   ctermfg=251 ctermbg=238  cterm=none
+hi Normal       guifg=#C6C6C6 guibg=#444440 gui=NONE   ctermfg=251 ctermbg=238  cterm=none
 hi NonText      guifg=#BCBCBC guibg=#3B3A32 gui=NONE   ctermfg=250 ctermbg=237  cterm=none
 hi Comment      guifg=#8B8778 guibg=NONE    gui=NONE   ctermfg=245 ctermbg=none cterm=none
 hi Constant     guifg=#af87d7 guibg=NONE    gui=bold   ctermfg=140 ctermbg=none cterm=bold
@@ -46,23 +41,23 @@ hi Type         guifg=#5fafd7 guibg=NONE    gui=NONE   ctermfg=74  ctermbg=none 
 " }}}
 
 "{{{ OTHER SHIT =============================
-hi DiffChange     guifg=#919CBB guibg=#091126 gui=NONE         ctermfg=181  ctermbg=239  cterm=none
-hi DiffDelete     guifg=#960050 guibg=#1E0010 gui=NONE         ctermfg=162  ctermbg=53   cterm=none
-hi DiffText       guifg=NONE    guibg=#4C4745 gui=italic,bold  ctermfg=NONE ctermbg=102  cterm=bold
-hi DiffAdd        guifg=#397541 guibg=#061E00 gui=NONE         ctermfg=23   ctermbg=NONE cterm=none
+hi DiffChange     guifg=#919CBB guibg=#161f3e gui=NONE         ctermfg=67   ctermbg=17   cterm=none
+hi DiffText       guifg=#919CBB guibg=#161f3e gui=reverse,bold ctermfg=67   ctermbg=17   cterm=reverse,bold
+hi DiffDelete     guibg=#870000 guifg=#d75f5f gui=bold         ctermfg=167  ctermbg=88   cterm=bold
+hi DiffAdd        guifg=#91ba68 guibg=#223c1d gui=NONE         ctermfg=71   ctermbg=22   cterm=bold
 hi Ignore         guifg=#808080 guibg=NONE    gui=NONE         ctermfg=244  ctermbg=NONE cterm=none
-hi Search         guifg=#000000 guibg=#EAC925 gui=reverse,bold ctermfg=16   ctermbg=193  cterm=reverse,bold 
-hi IncSearch      guifg=#000000 guibg=#C4BE89 gui=NONE         ctermfg=16   ctermbg=193  cterm=none         
+hi Search         guifg=#000000 guibg=#EAC925 gui=reverse,bold ctermfg=16   ctermbg=193  cterm=reverse,bold
+hi IncSearch      guifg=#000000 guibg=#C4BE89 gui=NONE         ctermfg=16   ctermbg=193  cterm=none
 hi Macro          guifg=#C4BE89 guibg=NONE    gui=italic       ctermfg=193  ctermbg=NONE cterm=bold
 hi MatchParen     guifg=#000000 guibg=#d78700 gui=bold         ctermfg=16   ctermbg=172  cterm=bold
-hi Question       guifg=#5fafd7 guibg=NONE    gui=NONE         ctermfg=74   ctermbg=NONE cterm=none
-hi Special        guifg=#5fafd7 guibg=NONE    gui=italic       ctermfg=74   ctermbg=NONE cterm=bold
+hi Question       guifg=#5FAFD7 guibg=NONE    gui=NONE         ctermfg=74   ctermbg=NONE cterm=none
+hi Special        guifg=#5FAFD7 guibg=NONE    gui=italic       ctermfg=74   ctermbg=NONE cterm=bold
 hi SpecialChar    guifg=#d75f87 guibg=NONE    gui=bold         ctermfg=168  ctermbg=NONE cterm=bold
 hi SpecialComment guifg=#8A8A8A guibg=NONE    gui=bold         ctermfg=245  ctermbg=NONE cterm=bold
 hi SpecialKey     guifg=#888A85 guibg=NONE    gui=italic       ctermfg=245  ctermbg=NONE cterm=bold
 hi Todo           guifg=#FFFFFF guibg=#5f0000 gui=bold         ctermfg=15   ctermbg=52   cterm=bold
 hi Underlined     guifg=#808080 guibg=NONE    gui=underline    ctermfg=244  ctermbg=NONE cterm=underline
-hi Directory      guifg=#5fafd7 guibg=NONE    gui=bold         ctermfg=74   ctermbg=NONE cterm=bold
+hi Directory      guifg=#5FAFD7 guibg=NONE    gui=bold         ctermfg=74   ctermbg=NONE cterm=bold
 hi Title          guifg=#87af00 guibg=NONE    gui=NONE         ctermfg=106  ctermbg=NONE cterm=None
 
 if has("spell")
@@ -78,14 +73,14 @@ endif
 hi Cursor       guifg=#000000 guibg=#F8F8F0 gui=none ctermfg=0    ctermbg=230  cterm=none
 hi CursorLine   guifg=NONE    guibg=#3E3D32 gui=none ctermfg=NONE ctermbg=237  cterm=none
 hi CursorColumn guifg=NONE    guibg=#3E3D32 gui=none ctermfg=NONE ctermbg=237  cterm=none
-hi ColorColumn  guifg=NONE    guibg=#3B0000 gui=none ctermfg=NONE ctermbg=52   cterm=none
+hi ColorColumn  guifg=NONE    guibg=#303030 gui=none ctermfg=NONE ctermbg=236   cterm=none
 hi ErrorMsg     guifg=#D75F87 guibg=#232526 gui=bold ctermfg=199  ctermbg=16   cterm=bold
 hi ModeMsg      guifg=#E6DB74 guibg=NONE    gui=none ctermfg=229  ctermbg=NONE cterm=none
 hi MoreMsg      guifg=#E6DB74 guibg=NONE    gui=none ctermfg=229  ctermbg=NONE cterm=none
 hi SignColumn   guifg=#87af00 guibg=#232526 gui=none ctermfg=106  ctermbg=235  cterm=none
 hi FoldColumn   guifg=#BCBCBC guibg=#303030 gui=none ctermfg=250  ctermbg=236  cterm=none
 hi Folded       guifg=#67798C guibg=#323D48 gui=none ctermfg=250  ctermbg=236  cterm=none
-hi LineNr       guifg=#BCBCBC guibg=#3B3A32 gui=none ctermfg=250  ctermbg=237  cterm=none
+hi LineNr       guifg=#8B8778 guibg=#3B3A32 gui=none ctermfg=250  ctermbg=237  cterm=none
 hi Pmenu        guifg=#5FAFD7 guibg=#000000 gui=none ctermfg=74   ctermbg=16   cterm=none
 hi PmenuSel     guifg=NONE    guibg=#808080 gui=none ctermfg=NONE ctermbg=244  cterm=none
 hi PmenuSbar    guifg=NONE    guibg=#080808 gui=none ctermfg=NONE ctermbg=232  cterm=none
@@ -111,5 +106,4 @@ hi link Precondit   PreProc
 hi link Repeat      Statement
 hi link Structure   Type
 hi link Typedef     Type
-
 " }}}
